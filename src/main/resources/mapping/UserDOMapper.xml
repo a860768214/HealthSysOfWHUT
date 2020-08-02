@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whut.health_sys.dao.UserDOMapper">
+  <resultMap id="BaseResultMap" type="com.whut.health_sys.dataobject.UserDO">
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="schmail" jdbcType="VARCHAR" property="schmail" />
+    <result column="cretime" jdbcType="VARCHAR" property="cretime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="weight" jdbcType="DOUBLE" property="weight" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    uid, name, gender, qq, phone, schmail, cretime, status, age, height, weight
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from healthsys_user
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
+  <select id="selectByMail" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_user
+    where schmail = #{mail,jdbcType=VARCHAR}
+  </select>
+
+  <select id="selectByUserIdAndStatus" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_user
+    where uid = #{uid,jdbcType=INTEGER}
+    and status = #{status,jdbcType=INTEGER}
+  </select>
+  <!--  hsy-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from healthsys_user
+    where uid = #{uid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.UserDO">
+    insert into healthsys_user (uid, name, gender, 
+      qq, phone, schmail, 
+      cretime, status, age, 
+      height, weight)
+    values (#{uid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{gender,jdbcType=INTEGER}, 
+      #{qq,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{schmail,jdbcType=VARCHAR}, 
+      #{cretime,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, 
+      #{height,jdbcType=DOUBLE}, #{weight,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.UserDO">
+    insert into healthsys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="qq != null">
+        qq,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="schmail != null">
+        schmail,
+      </if>
+      <if test="cretime != null">
+        cretime,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="height != null">
+        height,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="qq != null">
+        #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="schmail != null">
+        #{schmail,jdbcType=VARCHAR},
+      </if>
+      <if test="cretime != null">
+        #{cretime,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="height != null">
+        #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.whut.health_sys.dataobject.UserDO">
+    update healthsys_user
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="qq != null">
+        qq = #{qq,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="schmail != null">
+        schmail = #{schmail,jdbcType=VARCHAR},
+      </if>
+      <if test="cretime != null">
+        cretime = #{cretime,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="height != null">
+        height = #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.whut.health_sys.dataobject.UserDO">
+    update healthsys_user
+    set name = #{name,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=INTEGER},
+      qq = #{qq,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      schmail = #{schmail,jdbcType=VARCHAR},
+      cretime = #{cretime,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      age = #{age,jdbcType=INTEGER},
+      height = #{height,jdbcType=DOUBLE},
+      weight = #{weight,jdbcType=DOUBLE}
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+</mapper>
