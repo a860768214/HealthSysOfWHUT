@@ -1,0 +1,2 @@
+2020-08-04 22:05:53.063 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 8576 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-04 22:05:53.066 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
