@@ -125,11 +125,16 @@ public class UserController
         }
     }
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public CommonReturnType login(@RequestParam("schmail") String schmail,
                                   @RequestParam("vcode") String vcode,
                                   HttpServletRequest httpServletRequest)
     {
+        if(-1==userService.selectByMail(schmail).getStatus())
+        {
+            return CommonReturnType.create(ConvertUtil.convertToUserVO(userService.selectByMail(schmail)));
+        }
+
         try
         {
             String inSessionVCode = (String) httpServletRequest.getSession().getAttribute(schmail);

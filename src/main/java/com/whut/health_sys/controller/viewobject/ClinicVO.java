@@ -1,6 +1,7 @@
-package com.whut.health_sys.dataobject;
+package com.whut.health_sys.controller.viewobject;
 
-public class ClinicDO {
+public class ClinicVO
+{
     private Integer cid;
 
     private String name;

@@ -17,6 +17,16 @@
     from healthsys_clinic
     where cid = #{cid,jdbcType=INTEGER}
   </select>
+
+<!--  hsy-->
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_clinic
+    where name like "%"#{name,jdbcType=VARCHAR}"%"
+  </select>
+
+<!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from healthsys_clinic
     where cid = #{cid,jdbcType=INTEGER}

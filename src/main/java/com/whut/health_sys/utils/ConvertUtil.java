@@ -1,13 +1,7 @@
 package com.whut.health_sys.utils;
 
-import com.whut.health_sys.controller.viewobject.AppointmentVO;
-import com.whut.health_sys.controller.viewobject.PsyDocVO;
-import com.whut.health_sys.controller.viewobject.ReservationVO;
-import com.whut.health_sys.controller.viewobject.UserVO;
-import com.whut.health_sys.dataobject.AppointmentDO;
-import com.whut.health_sys.dataobject.PsyDocDO;
-import com.whut.health_sys.dataobject.ReservationDO;
-import com.whut.health_sys.dataobject.UserDO;
+import com.whut.health_sys.controller.viewobject.*;
+import com.whut.health_sys.dataobject.*;
 import org.springframework.beans.BeanUtils;
 
 public class ConvertUtil
@@ -182,5 +176,16 @@ public class ConvertUtil
         }
         
         return reservationVO;
+    }
+
+    public static ClinicVO convertToClinicVO(ClinicDO clinicDO)
+    {
+        if(clinicDO==null)
+        {
+            return null;
+        }
+        ClinicVO clinicVO = new ClinicVO();
+        BeanUtils.copyProperties(clinicDO, clinicVO);
+        return clinicVO;
     }
 }

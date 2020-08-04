@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("healthsys")
+@RequestMapping("healthsys/appo")
 @CrossOrigin(origins = {"*"},allowCredentials = "true",allowedHeaders = "*")
 public class AppointmentController
 {

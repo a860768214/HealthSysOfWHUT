@@ -13,6 +13,8 @@ public interface ClinicDOMapper {
 
     ClinicDO selectByPrimaryKey(Integer cid);
 
+    ClinicDO selectByName(String name);
+
     int updateByPrimaryKeySelective(ClinicDO record);
 
     int updateByPrimaryKey(ClinicDO record);
