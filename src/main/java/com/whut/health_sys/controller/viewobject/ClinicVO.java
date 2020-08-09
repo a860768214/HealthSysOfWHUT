@@ -8,7 +8,7 @@ public class ClinicVO
 
     private String phone;
 
-    private Integer status;
+    private String status;
 
     private String address;
 
@@ -36,19 +36,21 @@ public class ClinicVO
         this.phone = phone == null ? null : phone.trim();
     }
 
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address == null ? null : address.trim();
+    }
+
+    public String getStatus()
+    {
+        return status;
+    }
+
+    public void setStatus(String status)
+    {
+        this.status = status;
     }
 }

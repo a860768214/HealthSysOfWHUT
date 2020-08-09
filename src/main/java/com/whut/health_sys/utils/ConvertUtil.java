@@ -64,6 +64,15 @@ public class ConvertUtil
                 }
             }
         }
+
+        if(psyDocDO.getStatus()==1)
+        {
+            psyDocVO.setStatus("营业中");
+        }
+        else
+        {
+            psyDocVO.setStatus("休息中");
+        }
         return psyDocVO;
     }
 
@@ -186,6 +195,16 @@ public class ConvertUtil
         }
         ClinicVO clinicVO = new ClinicVO();
         BeanUtils.copyProperties(clinicDO, clinicVO);
+
+        if(clinicDO.getStatus()==1)
+        {
+            clinicVO.setStatus("营业中");
+        }
+        else
+        {
+            clinicVO.setStatus("休息中");
+        }
+
         return clinicVO;
     }
 }

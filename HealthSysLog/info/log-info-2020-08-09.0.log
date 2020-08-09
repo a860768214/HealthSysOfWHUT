@@ -1,0 +1,5 @@
+2020-08-09 21:48:47.389 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Starting HealthSysApplicationTests on LAPTOP-GDCB5BAF with PID 16876 (started by HSY in F:\JavaProjects\health_sys)
+2020-08-09 21:48:47.391 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - No active profile set, falling back to default profiles: default
+2020-08-09 21:48:50.473 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-09 21:48:51.140 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Started HealthSysApplicationTests in 4.675 seconds (JVM running for 6.228)
+2020-08-09 21:48:51.580 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

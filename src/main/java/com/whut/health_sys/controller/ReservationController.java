@@ -9,4 +9,5 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = {"*"},allowCredentials = "true",allowedHeaders = "*")
 public class ReservationController
 {
+
 }

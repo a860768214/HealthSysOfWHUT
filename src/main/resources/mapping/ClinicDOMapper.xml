@@ -26,6 +26,11 @@
     where name like "%"#{name,jdbcType=VARCHAR}"%"
   </select>
 
+  <select id="listClinic" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_clinic
+  </select>
 <!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from healthsys_clinic
