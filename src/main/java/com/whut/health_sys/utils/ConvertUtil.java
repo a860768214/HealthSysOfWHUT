@@ -4,6 +4,8 @@ import com.whut.health_sys.controller.viewobject.*;
 import com.whut.health_sys.dataobject.*;
 import org.springframework.beans.BeanUtils;
 
+import java.util.List;
+
 public class ConvertUtil
 {
 
@@ -183,6 +185,35 @@ public class ConvertUtil
                 break;
             }
         }
+
+        switch (reservationDO.getDept())
+        {
+            case 0:
+            {
+                reservationVO.setDept("其他科室");
+                break;
+            }
+            case 1:
+            {
+                reservationVO.setDept("骨科");
+                break;
+            }
+            case 2:
+            {
+                reservationVO.setDept("外科");
+                break;
+            }
+            case 3:
+            {
+                reservationVO.setDept("五官科");
+                break;
+            }
+            case 4:
+            {
+                reservationVO.setDept("内科");
+                break;
+            }
+        }
         
         return reservationVO;
     }
@@ -206,5 +237,23 @@ public class ConvertUtil
         }
 
         return clinicVO;
+    }
+
+    public static StepVO convertToStepVO(List<StepDO> stepDOS)
+    {
+        if(stepDOS==null)
+        {
+            return null;
+        }
+
+        StepVO stepVO = new StepVO();
+        for(StepDO t:stepDOS)
+        {
+            stepVO.getDates().add(t.getDate());
+            stepVO.getSteps().add(t.getSteps());
+        }
+        stepVO.setUid(stepDOS.get(0).getUid());
+
+        return stepVO;
     }
 }

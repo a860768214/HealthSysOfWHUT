@@ -6,7 +6,7 @@ public interface UserService
 {
     UserDO selectByMail(String mail);
 
-    int insertSelective(UserDO record);
+    UserDO insertSelective(UserDO record);
 
     UserDO selectByUserIdAndStatus(Integer userid,Integer status);
 

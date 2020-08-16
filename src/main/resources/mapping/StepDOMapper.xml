@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whut.health_sys.dao.StepDOMapper">
+  <resultMap id="BaseResultMap" type="com.whut.health_sys.dataobject.StepDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="steps" jdbcType="VARCHAR" property="steps" />
+    <result column="date" jdbcType="VARCHAR" property="date" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, uid, steps, date
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from healthsys_step
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
+
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_step
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+<!--  hsy-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from healthsys_step
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.StepDO" useGeneratedKeys="true" keyProperty="id">
+    insert into healthsys_step (id, uid, steps, 
+      date)
+    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{steps,jdbcType=VARCHAR}, 
+      #{date,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.StepDO" useGeneratedKeys="true" keyProperty="id">
+    insert into healthsys_step
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="steps != null">
+        steps,
+      </if>
+      <if test="date != null">
+        date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null">
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="steps != null">
+        #{steps,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.whut.health_sys.dataobject.StepDO">
+    update healthsys_step
+    <set>
+      <if test="uid != null">
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="steps != null">
+        steps = #{steps,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null">
+        date = #{date,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.whut.health_sys.dataobject.StepDO">
+    update healthsys_step
+    set uid = #{uid,jdbcType=INTEGER},
+      steps = #{steps,jdbcType=VARCHAR},
+      date = #{date,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

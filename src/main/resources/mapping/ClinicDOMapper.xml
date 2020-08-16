@@ -36,13 +36,13 @@
     delete from healthsys_clinic
     where cid = #{cid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.whut.health_sys.dataobject.ClinicDO">
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.ClinicDO" useGeneratedKeys="true" keyProperty="cid">
     insert into healthsys_clinic (cid, name, phone, 
       status, address)
     values (#{cid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.ClinicDO">
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.ClinicDO" useGeneratedKeys="true" keyProperty="cid">
     insert into healthsys_clinic
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="cid != null">

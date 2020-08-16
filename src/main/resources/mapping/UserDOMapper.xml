@@ -44,7 +44,7 @@
     delete from healthsys_user
     where uid = #{uid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.whut.health_sys.dataobject.UserDO">
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.UserDO" useGeneratedKeys="true" keyProperty="uid">
     insert into healthsys_user (uid, name, gender, 
       qq, phone, schmail, 
       cretime, status, age, 
@@ -54,7 +54,7 @@
       #{cretime,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, 
       #{height,jdbcType=DOUBLE}, #{weight,jdbcType=DOUBLE})
   </insert>
-  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.UserDO">
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.UserDO" useGeneratedKeys="true" keyProperty="uid">
     insert into healthsys_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="uid != null">

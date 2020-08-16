@@ -24,10 +24,10 @@ public class UserServiceImpl implements UserService
     }
 
     @Override
-    public int insertSelective(UserDO record)
+    public UserDO insertSelective(UserDO record)
     {
         userDOMapper.insertSelective(record);
-        return 0;
+        return record;
     }
 
     @Override

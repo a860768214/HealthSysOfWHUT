@@ -14,7 +14,9 @@ public class CodeConfig
 
     public static int STATUS_RES_ACCESSED=1;
     public static int STATUS_RES_DENIED=0;
+    public static int STATUS_RES_PROCESSED=-1;
 
     public static int STATUS_APPOINT_ACCESSED=1;
     public static int STATUS_APPOINT_DENIED=0;
+    public static int STATUS_APPOINT_PROCESSED=-1;
 }

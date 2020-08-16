@@ -25,7 +25,7 @@
     delete from healthsys_psydoc
     where did = #{did,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.whut.health_sys.dataobject.PsyDocDO">
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.PsyDocDO" useGeneratedKeys="true" keyProperty="did">
     insert into healthsys_psydoc (did, name, gender, 
       qq, phone, cretime, 
       status, desc, age)
@@ -33,7 +33,7 @@
       #{qq,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{cretime,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{desc,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.PsyDocDO">
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.PsyDocDO" useGeneratedKeys="true" keyProperty="did">
     insert into healthsys_psydoc
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="did != null">

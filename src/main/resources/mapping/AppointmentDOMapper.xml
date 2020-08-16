@@ -22,13 +22,13 @@
     delete from healthsys_appointment
     where aid = #{aid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.whut.health_sys.dataobject.AppointmentDO">
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.AppointmentDO" useGeneratedKeys="true" keyProperty="aid">
     insert into healthsys_appointment (aid, uid, did, 
       time, status, msg)
     values (#{aid,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{did,jdbcType=INTEGER}, 
       #{time,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{msg,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.AppointmentDO">
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.AppointmentDO" useGeneratedKeys="true" keyProperty="aid">
     insert into healthsys_appointment
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="aid != null">

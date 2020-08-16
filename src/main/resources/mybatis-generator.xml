@@ -46,16 +46,19 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table  tableName="healthsys_appointment" domainObjectName="AppointmentDO" enableCountByExample="false"
-                enableUpdateByExample="false" enableDeleteByExample="fales"
-                enableSelectByExample="false" selectByExampleQueryId="false"></table>
+<!--        <table  tableName="healthsys_appointment" domainObjectName="AppointmentDO" enableCountByExample="false"-->
+<!--                enableUpdateByExample="false" enableDeleteByExample="fales"-->
+<!--                enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 <!--        <table  tableName="healthsys_clinic" domainObjectName="ClinicDO" enableCountByExample="false"-->
 <!--                enableUpdateByExample="false" enableDeleteByExample="fales"-->
 <!--                enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 <!--        <table  tableName="healthsys_psydoc" domainObjectName="PsyDocDO" enableCountByExample="false"-->
 <!--                enableUpdateByExample="false" enableDeleteByExample="fales"-->
 <!--                enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
-        <table  tableName="healthsys_reservation" domainObjectName="ReservationDO" enableCountByExample="false"
+<!--        <table  tableName="healthsys_reservation" domainObjectName="ReservationDO" enableCountByExample="false"-->
+<!--                enableUpdateByExample="false" enableDeleteByExample="fales"-->
+<!--                enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+        <table  tableName="healthsys_step" domainObjectName="StepDO" enableCountByExample="false"
                 enableUpdateByExample="false" enableDeleteByExample="fales"
                 enableSelectByExample="false" selectByExampleQueryId="false"></table>
 <!--        <table  tableName="healthsys_user" domainObjectName="UserDO" enableCountByExample="false"-->

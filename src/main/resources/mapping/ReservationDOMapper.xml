@@ -19,11 +19,28 @@
     from healthsys_reservation
     where rid = #{rid,jdbcType=INTEGER}
   </select>
+
+<!--  hsy-->
+  <select id="listRes" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_reservation
+  </select>
+
+  <select id="searchResByUser" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_reservation
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
+
+<!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from healthsys_reservation
     where rid = #{rid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.whut.health_sys.dataobject.ReservationDO">
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.ReservationDO" useGeneratedKeys="true" keyProperty="rid">
     insert into healthsys_reservation (rid, uid, cid, 
       time, status, msg, 
       dept)
@@ -31,7 +48,7 @@
       #{time,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{msg,jdbcType=VARCHAR}, 
       #{dept,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.ReservationDO">
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.ReservationDO" useGeneratedKeys="true" keyProperty="rid">
     insert into healthsys_reservation
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="rid != null">
