@@ -8,17 +8,14 @@ public class CodeConfig
     public static final int STATUS_USER_ADMIN=-1;
 
     public static final int STATUS_DOC_NORMAL=1;
-    public static final int STATUS_DOC_EXPIRED=0;
+    public static final int STATUS_DOC_CLOSED =0;
 
     public static final int STATUS_CLINIC_NORMAL=1;
-    public static final int STATUS_CLINIC_EXPIRED=0;
+    public static final int STATUS_CLINIC_CLOSED =0;
 
-    public static final int STATUS_RES_ACCESSED=1;
-    public static final int STATUS_RES_DENIED=0;
-    public static final int STATUS_RES_PROCESSED=2;
-    public static final int STATUS_RES_FINISHED=-1;
+    public static final int STATUS_ACCESSED =1;
+    public static final int STATUS_DENIED =0;
+    public static final int STATUS_PROCESSED =2;
+    public static final int STATUS_FINISHED =-1;
 
-    public static final int STATUS_APPOINT_ACCESSED=1;
-    public static final int STATUS_APPOINT_DENIED=0;
-    public static final int STATUS_APPOINT_PROCESSED=-1;
 }

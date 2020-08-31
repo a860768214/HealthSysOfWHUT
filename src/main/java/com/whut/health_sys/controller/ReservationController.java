@@ -8,7 +8,6 @@ import com.whut.health_sys.response.CommonReturnType;
 import com.whut.health_sys.service.ClinicService;
 import com.whut.health_sys.service.ReservationService;
 import com.whut.health_sys.service.UserService;
-import com.whut.health_sys.service.impl.ClinicServiceImpl;
 import com.whut.health_sys.utils.ConvertUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -116,7 +115,7 @@ public class ReservationController
             reservationDO.setUid(Integer.parseInt(Suid));
             reservationDO.setTime(Integer.parseInt(Stime));
             reservationDO.setDept(Integer.parseInt(Sdept));
-            reservationDO.setStatus(CodeConfig.STATUS_RES_PROCESSED);
+            reservationDO.setStatus(CodeConfig.STATUS_PROCESSED);
             reservationDO.setMsg(msg);
 
             ReservationDO res = reservationService.addRes(reservationDO);
@@ -149,7 +148,7 @@ public class ReservationController
             reservationDO.setTime(Integer.parseInt(Stime));
             reservationDO.setDept(Integer.parseInt(Sdept));
             reservationDO.setMsg(msg);
-            reservationDO.setStatus(CodeConfig.STATUS_RES_PROCESSED);
+            reservationDO.setStatus(CodeConfig.STATUS_PROCESSED);
 
             ReservationDO res = reservationService.modifyRes(reservationDO);
             return CommonReturnType.create(ConvertUtil.convertToReservationVO(res));
@@ -205,17 +204,17 @@ public class ReservationController
 
             if("agree".equals(operation))
             {
-                res.setStatus(CodeConfig.STATUS_RES_ACCESSED);
+                res.setStatus(CodeConfig.STATUS_ACCESSED);
                 res.setMsg(msg+res.getMsg());
             }
             else if("reject".equals(operation))
             {
-                res.setStatus(CodeConfig.STATUS_RES_DENIED);
+                res.setStatus(CodeConfig.STATUS_DENIED);
                 res.setMsg(msg);
             }
             else if("finish".equals(operation))
             {
-                res.setStatus(CodeConfig.STATUS_RES_DENIED);
+                res.setStatus(CodeConfig.STATUS_FINISHED);
                 res.setMsg("已完成");
             }
 
