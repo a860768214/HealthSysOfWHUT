@@ -1,11 +1,15 @@
 package com.whut.health_sys.service.impl;
 
+import com.whut.health_sys.controller.viewobject.ReservationVO;
 import com.whut.health_sys.dao.ReservationDOMapper;
 import com.whut.health_sys.dataobject.ReservationDO;
+import com.whut.health_sys.dataobject.UserDO;
 import com.whut.health_sys.service.ReservationService;
+import com.whut.health_sys.utils.ConvertUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -23,6 +27,11 @@ public class ReservationServiceImpl implements ReservationService
     @Override
     public ReservationDO addRes(ReservationDO reservationDO)
     {
+        if(reservationDO==null)
+        {
+            return null;
+        }
+
         reservationDOMapper.insertSelective(reservationDO);
         System.out.println(reservationDO.getRid());
         return reservationDO;
@@ -31,25 +40,48 @@ public class ReservationServiceImpl implements ReservationService
     @Override
     public ReservationDO modifyRes(ReservationDO reservationDO)
     {
+        if(reservationDO==null)
+        {
+            return null;
+        }
+
         reservationDOMapper.updateByPrimaryKeySelective(reservationDO);
         return reservationDO;
     }
 
     @Override
-    public ReservationDO cancelRes(Integer rid)
+    public ReservationDO cancelRes(ReservationDO reservationDO)
     {
-        return null;
+        if(reservationDO==null)
+        {
+            return null;
+        }
+
+        reservationDOMapper.deleteByPrimaryKey(reservationDO.getRid());
+        return reservationDO;
     }
 
     @Override
     public ReservationDO searchRes(Integer rid)
     {
-        return null;
+        return reservationDOMapper.selectByPrimaryKey(rid);
     }
 
     @Override
-    public ReservationDO searchResByUser(Integer uid)
+    public List<ReservationVO> searchResByUser(UserDO userDO)
     {
-        return null;
+        if(userDO==null)
+        {
+            return null;
+        }
+
+        List<ReservationVO> reservationVOS=new ArrayList<>();
+        List<ReservationDO> reservationDOS = reservationDOMapper.searchResByUser(userDO.getUid());
+        for(ReservationDO t:reservationDOS)
+        {
+            reservationVOS.add(ConvertUtil.convertToReservationVO(t));
+        }
+
+        return reservationVOS;
     }
 }

@@ -36,6 +36,33 @@ public class ConvertUtil
                 }
             }
         }
+
+        if((userDO.getStatus()!=null))
+        {
+            switch (userDO.getStatus())
+            {
+                case 1:
+                {
+                    userVO.setStatus("师生");
+                    break;
+                }
+                case 2:
+                {
+                    userVO.setStatus("医生");
+                    break;
+                }
+                case 0:
+                {
+                    userVO.setStatus("已注销");
+                    break;
+                }
+                case -1:
+                {
+                    userVO.setStatus("管理员");
+                    break;
+                }
+            }
+        }
         return userVO;
     }
 
@@ -179,9 +206,14 @@ public class ConvertUtil
                 reservationVO.setStatus("预约失败");
                 break;
             }
-            case -1:
+            case 2:
             {
                 reservationVO.setStatus("处理中");
+                break;
+            }
+            case -1:
+            {
+                reservationVO.setStatus("已完成");
                 break;
             }
         }

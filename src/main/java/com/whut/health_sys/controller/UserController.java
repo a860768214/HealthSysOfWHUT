@@ -74,7 +74,7 @@ public class UserController
     }
 
     //完善信息
-    @PostMapping("/complete")
+    @PutMapping()
     @Transactional
     public CommonReturnType complete(@RequestParam("schmail") String schmail,
                                            @RequestParam("name") String name,
@@ -84,7 +84,8 @@ public class UserController
                                            @RequestParam(value = "age", required = false, defaultValue = "") String Sage,
                                            @RequestParam(value = "height", required = false, defaultValue = "") String Sheight,
                                            @RequestParam(value = "weight", required = false, defaultValue = "") String Sweight,
-                                           HttpServletRequest httpServletRequest)
+                                           HttpServletRequest httpServletRequest,
+                                     @RequestParam("identity") String identity )
     {
 
         //将用户信息更新
@@ -112,7 +113,14 @@ public class UserController
             {
                 user.setWeight(Double.parseDouble(Sweight));
             }
-            user.setStatus(CodeConfig.STATUS_USER_NORMAL);
+            if("doc".equals(identity))
+            {
+                user.setStatus(CodeConfig.STATUS_USER_DOC);
+            }
+            else
+            {
+                user.setStatus(CodeConfig.STATUS_USER_STUDENT);
+            }
 
             userService.update(user);
 
@@ -125,7 +133,7 @@ public class UserController
         }
     }
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public CommonReturnType login(@RequestParam("schmail") String schmail,
                                   @RequestParam("vcode") String vcode,
                                   HttpServletRequest httpServletRequest)
@@ -209,5 +217,27 @@ public class UserController
             return CommonReturnType.create(null, "unknown_error");
         }
 
+    }
+
+    @PutMapping("/admin")
+    public CommonReturnType setAdmin(@RequestParam("uid") String uid,
+                                     @RequestParam("password") String password)
+    {
+        try
+        {
+            if("123456".equals(password))
+            {
+                UserDO userDO = userService.selectByUserId(Integer.parseInt(uid));
+                userDO.setStatus(CodeConfig.STATUS_USER_ADMIN);
+                UserDO update = userService.update(userDO);
+                return CommonReturnType.create(ConvertUtil.convertToUserVO(update));
+            }
+            return CommonReturnType.create(null, "wrong_password");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return CommonReturnType.create(null, "unknown_error");
+        }
     }
 }

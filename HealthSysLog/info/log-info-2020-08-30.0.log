@@ -1,0 +1,191 @@
+2020-08-30 21:51:21.500 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 5248 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 21:51:21.502 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 21:51:23.116 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 21:51:23.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 21:51:23.123 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 21:51:23.123 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 21:51:23.196 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 21:51:23.196 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1656 ms
+2020-08-30 21:51:23.879 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 21:51:24.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 21:51:24.139 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 21:51:24.160 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 3.561 seconds (JVM running for 4.937)
+2020-08-30 21:51:40.499 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 21:51:40.500 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 21:51:40.503 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 21:51:40.669 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 21:54:59.684 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 13532 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 21:54:59.688 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 21:55:00.654 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 21:55:00.660 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 21:55:00.661 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 21:55:00.661 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 21:55:00.739 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 21:55:00.739 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 990 ms
+2020-08-30 21:55:01.084 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 21:55:01.220 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 21:55:01.237 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 21:55:01.244 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 2.029 seconds (JVM running for 2.939)
+2020-08-30 21:55:04.029 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 21:55:04.029 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 21:55:04.032 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 21:55:04.087 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:08:29.500 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 12968 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:08:29.504 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:08:30.364 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:08:30.371 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:08:30.371 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:08:30.371 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:08:30.440 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:08:30.440 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 895 ms
+2020-08-30 22:08:30.771 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:08:30.904 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:08:30.921 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:08:30.929 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.824 seconds (JVM running for 2.701)
+2020-08-30 22:15:26.599 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:15:26.600 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:15:26.603 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:15:26.678 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:16:41.907 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 11488 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:16:41.910 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:16:42.752 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:16:42.758 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:16:42.758 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:16:42.759 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:16:42.835 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:16:42.835 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 889 ms
+2020-08-30 22:16:43.153 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:16:43.292 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:16:43.317 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:16:43.324 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.75 seconds (JVM running for 2.621)
+2020-08-30 22:16:55.485 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:16:55.486 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:16:55.489 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:16:55.561 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:19:10.648 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 2584 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:19:10.650 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:19:11.484 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:19:11.491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:19:11.492 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:19:11.492 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:19:11.573 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:19:11.573 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 884 ms
+2020-08-30 22:19:11.891 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:19:12.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:19:12.041 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:19:12.048 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.72 seconds (JVM running for 2.599)
+2020-08-30 22:19:22.637 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:19:22.637 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:19:22.640 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:19:22.713 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:20:31.497 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 17392 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:20:31.501 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:20:32.302 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:20:32.309 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:20:32.309 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:20:32.309 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:20:32.384 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:20:32.385 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 844 ms
+2020-08-30 22:20:32.714 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:20:32.854 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:20:32.870 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:20:32.877 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.75 seconds (JVM running for 2.66)
+2020-08-30 22:21:03.676 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:21:03.676 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:21:03.679 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:21:03.754 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:22:56.510 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 11376 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:22:56.513 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:22:57.427 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:22:57.433 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:22:57.434 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:22:57.434 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:22:57.509 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:22:57.509 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 926 ms
+2020-08-30 22:22:57.851 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:22:57.982 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:22:57.998 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:22:58.005 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.855 seconds (JVM running for 2.766)
+2020-08-30 22:23:07.678 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:23:07.678 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:23:07.681 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:23:07.758 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:24:35.864 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 12312 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:24:35.866 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:24:36.739 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:24:36.746 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:24:36.746 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:24:36.746 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:24:36.840 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:24:36.840 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 923 ms
+2020-08-30 22:24:37.166 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:24:37.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:24:37.332 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:24:37.339 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.82 seconds (JVM running for 2.715)
+2020-08-30 22:24:41.826 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:24:41.827 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:24:41.830 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:24:41.913 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:31:59.927 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 13104 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:31:59.930 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:32:00.886 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:32:00.892 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:32:00.893 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:32:00.893 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:32:00.987 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:32:00.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 996 ms
+2020-08-30 22:32:01.353 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:32:01.485 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:32:01.501 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:32:01.508 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.949 seconds (JVM running for 2.891)
+2020-08-30 22:33:01.813 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:33:01.813 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:33:01.816 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:33:01.868 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:39:57.794 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Starting HealthSysApplicationTests on LAPTOP-GDCB5BAF with PID 17436 (started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:39:57.796 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - No active profile set, falling back to default profiles: default
+2020-08-30 22:39:59.651 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:40:00.161 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Started HealthSysApplicationTests in 2.756 seconds (JVM running for 3.717)
+2020-08-30 22:40:00.515 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:49:05.913 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 18004 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:49:05.915 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:49:06.904 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:49:06.910 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:49:06.912 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:49:06.912 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:49:06.988 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:49:06.988 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 994 ms
+2020-08-30 22:49:07.331 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:49:07.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:49:07.486 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:49:07.493 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.999 seconds (JVM running for 2.924)
+2020-08-30 22:50:03.640 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:50:03.641 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:50:03.644 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:50:26.887 [http-nio-8091-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:53:39.431 [main] INFO  com.whut.health_sys.HealthSysApplication - Starting HealthSysApplication on LAPTOP-GDCB5BAF with PID 18160 (F:\JavaProjects\health_sys\target\classes started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:53:39.434 [main] INFO  com.whut.health_sys.HealthSysApplication - No active profile set, falling back to default profiles: default
+2020-08-30 22:53:40.305 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+2020-08-30 22:53:40.313 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:53:40.313 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-30 22:53:40.314 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-30 22:53:40.397 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-30 22:53:40.397 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 910 ms
+2020-08-30 22:53:40.747 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:53:40.878 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+2020-08-30 22:53:40.894 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+2020-08-30 22:53:40.901 [main] INFO  com.whut.health_sys.HealthSysApplication - Started HealthSysApplication in 1.827 seconds (JVM running for 2.731)
+2020-08-30 22:53:44.582 [http-nio-8091-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-30 22:53:44.582 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-30 22:53:44.585 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2020-08-30 22:53:44.660 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-30 22:58:49.420 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Starting HealthSysApplicationTests on LAPTOP-GDCB5BAF with PID 11080 (started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 22:58:49.421 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - No active profile set, falling back to default profiles: default
+2020-08-30 22:58:51.950 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 22:58:52.541 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Started HealthSysApplicationTests in 3.447 seconds (JVM running for 4.32)
+2020-08-30 22:58:52.923 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-30 23:01:10.400 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Starting HealthSysApplicationTests on LAPTOP-GDCB5BAF with PID 2464 (started by HSY in F:\JavaProjects\health_sys)
+2020-08-30 23:01:10.401 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - No active profile set, falling back to default profiles: default
+2020-08-30 23:01:12.086 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-30 23:01:12.628 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Started HealthSysApplicationTests in 2.555 seconds (JVM running for 3.398)
+2020-08-30 23:01:12.888 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

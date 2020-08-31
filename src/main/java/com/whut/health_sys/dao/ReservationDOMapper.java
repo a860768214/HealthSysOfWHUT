@@ -21,5 +21,5 @@ public interface ReservationDOMapper {
 
     List<ReservationDO> listRes();
 
-    ReservationDO searchResByUser(Integer uid);
+    List<ReservationDO> searchResByUser(Integer uid);
 }

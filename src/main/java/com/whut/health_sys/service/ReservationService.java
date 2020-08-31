@@ -1,6 +1,8 @@
 package com.whut.health_sys.service;
 
+import com.whut.health_sys.controller.viewobject.ReservationVO;
 import com.whut.health_sys.dataobject.ReservationDO;
+import com.whut.health_sys.dataobject.UserDO;
 
 import java.util.List;
 
@@ -12,9 +14,9 @@ public interface ReservationService
 
     ReservationDO modifyRes(ReservationDO reservationDO);
 
-    ReservationDO cancelRes(Integer rid);
+    ReservationDO cancelRes(ReservationDO reservationDO);
 
     ReservationDO searchRes(Integer rid);
 
-    ReservationDO searchResByUser(Integer uid);
+    List<ReservationVO> searchResByUser(UserDO userDO);
 }

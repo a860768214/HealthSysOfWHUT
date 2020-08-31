@@ -140,3 +140,8 @@
 2020-08-16 16:06:07.477 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2020-08-16 16:06:07.480 [http-nio-8091-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
 2020-08-16 16:06:07.527 [http-nio-8091-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-16 16:10:57.571 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Starting HealthSysApplicationTests on LAPTOP-GDCB5BAF with PID 13444 (started by HSY in F:\JavaProjects\health_sys)
+2020-08-16 16:10:57.572 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - No active profile set, falling back to default profiles: default
+2020-08-16 16:10:59.381 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-16 16:10:59.876 [main] INFO  com.whut.health_sys.HealthSysApplicationTests - Started HealthSysApplicationTests in 2.746 seconds (JVM running for 3.778)
+2020-08-16 16:11:00.294 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
