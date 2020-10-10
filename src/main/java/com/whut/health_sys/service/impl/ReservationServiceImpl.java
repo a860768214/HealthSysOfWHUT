@@ -45,7 +45,7 @@ public class ReservationServiceImpl implements ReservationService
             return null;
         }
 
-        reservationDOMapper.updateByPrimaryKeySelective(reservationDO);
+        reservationDOMapper.updateByPrimaryKey(reservationDO);
         return reservationDO;
     }
 

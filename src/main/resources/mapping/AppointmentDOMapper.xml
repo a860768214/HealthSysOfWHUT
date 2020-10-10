@@ -18,6 +18,22 @@
     from healthsys_appointment
     where aid = #{aid,jdbcType=INTEGER}
   </select>
+
+<!--  hsy-->
+  <select id="listAppo" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_appointment
+  </select>
+
+  <select id="searchAppoByUser" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_appointment
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from healthsys_appointment
     where aid = #{aid,jdbcType=INTEGER}

@@ -1,6 +1,7 @@
 package com.whut.health_sys.dataobject;
 
-public class ReservationDO {
+public class ReservationDO
+{
     private Integer rid;
 
     private Integer uid;

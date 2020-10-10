@@ -1,5 +1,6 @@
 package com.whut.health_sys.service.impl;
 
+import com.whut.health_sys.config.CodeConfig;
 import com.whut.health_sys.controller.viewobject.ClinicVO;
 import com.whut.health_sys.dao.ClinicDOMapper;
 import com.whut.health_sys.dataobject.ClinicDO;
@@ -70,7 +71,7 @@ public class ClinicServiceImpl implements ClinicService
     public ClinicDO CloseClinice(ClinicDO clinicDO)
     {
         ClinicDO selectByPrimaryKey = clinicDOMapper.selectByPrimaryKey(clinicDO.getCid());
-        selectByPrimaryKey.setStatus(0);
+        selectByPrimaryKey.setStatus(CodeConfig.STATUS_CLINIC_CLOSED);
 
         clinicDOMapper.updateByPrimaryKeySelective(selectByPrimaryKey);
         return clinicDOMapper.selectByPrimaryKey(clinicDO.getCid());

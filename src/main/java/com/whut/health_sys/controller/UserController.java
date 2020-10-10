@@ -14,6 +14,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+import redis.clients.jedis.Jedis;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Random;
@@ -25,6 +26,8 @@ public class UserController
 {
     @Autowired
     private UserService userService;
+
+    private static Jedis jedis=new Jedis("localhost", 6379);
 
     //获取验证码
     @GetMapping("/vcode")
@@ -69,7 +72,7 @@ public class UserController
 //        发送邮件
         MailUtil.send(mailAccount, schmail, "【健康理工】登陆/注册", "验证码为" + VCode + ", 30分钟内有效。", false);
 
-        httpServletRequest.getSession().setAttribute(schmail, VCode);
+        jedis.setex("health_sys/"+schmail, 1800, VCode);
         return CommonReturnType.create("vcode_has_sent");
     }
 
@@ -145,7 +148,7 @@ public class UserController
 
         try
         {
-            String inSessionVCode = (String) httpServletRequest.getSession().getAttribute(schmail);
+            String inSessionVCode = jedis.get("health_sys/"+schmail);
             String substring = schmail.substring(schmail.indexOf("@"));
 
             if (!"@whut.edu.cn".equals(substring))
