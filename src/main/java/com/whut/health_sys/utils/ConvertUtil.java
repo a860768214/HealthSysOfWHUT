@@ -288,4 +288,65 @@ public class ConvertUtil
 
         return stepVO;
     }
+
+    public static DailyVO convertToDailyVO(DailyDO dailyDO)
+    {
+        if(dailyDO==null)
+        {
+            return null;
+        }
+
+        DailyVO dailyVO = new DailyVO();
+        BeanUtils.copyProperties(dailyDO, dailyVO);
+
+        switch (dailyDO.getInfection())
+        {
+            case 1:
+            {
+
+                break;
+            }
+            case 2:
+            {
+
+                break;
+            }
+            case 3:
+            {
+
+                break;
+            }
+            case 4:
+            {
+
+                break;
+            }
+        }
+
+        switch (dailyDO.getFamilyinfection())
+        {
+            case 1:
+            {
+
+                break;
+            }
+            case 2:
+            {
+
+                break;
+            }
+            case 3:
+            {
+
+                break;
+            }
+            case 4:
+            {
+
+                break;
+            }
+        }
+
+        return dailyVO;
+    }
 }

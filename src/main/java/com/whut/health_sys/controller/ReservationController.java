@@ -66,7 +66,7 @@ public class ReservationController
                 return CommonReturnType.create(null, "no_info_acquired");
             }
 
-            if (userDO.getUid() != res.getUid())
+            if (!userDO.getUid().equals(res.getUid()))
             {
                 return CommonReturnType.create(null, "user_not_match");
             }
@@ -170,7 +170,7 @@ public class ReservationController
             ReservationDO res = reservationService.searchRes(Integer.parseInt(Srid));
 
 
-            if (userDO.getUid() != res.getUid())
+            if (!userDO.getUid().equals(res.getUid()))
             {
                 return CommonReturnType.create(null, "user_not_match");
             }

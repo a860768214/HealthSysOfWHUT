@@ -58,7 +58,7 @@
 <!--        <table  tableName="healthsys_reservation" domainObjectName="ReservationDO" enableCountByExample="false"-->
 <!--                enableUpdateByExample="false" enableDeleteByExample="fales"-->
 <!--                enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
-        <table  tableName="healthsys_step" domainObjectName="StepDO" enableCountByExample="false"
+        <table  tableName="healthsys_daily" domainObjectName="DailyDO" enableCountByExample="false"
                 enableUpdateByExample="false" enableDeleteByExample="fales"
                 enableSelectByExample="false" selectByExampleQueryId="false"></table>
 <!--        <table  tableName="healthsys_user" domainObjectName="UserDO" enableCountByExample="false"-->

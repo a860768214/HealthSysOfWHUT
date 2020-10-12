@@ -21,9 +21,8 @@ public class ClinicServiceImpl implements ClinicService
     @Override
     public ClinicDO searchClinic(String name)
     {
-        ClinicDO clinicDO = clinicDOMapper.selectByName(name);
 
-        return clinicDO;
+        return clinicDOMapper.selectByName(name);
     }
 
     @Override

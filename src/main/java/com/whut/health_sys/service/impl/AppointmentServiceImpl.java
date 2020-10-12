@@ -5,9 +5,11 @@ import com.whut.health_sys.dataobject.AppointmentDO;
 import com.whut.health_sys.dataobject.UserDO;
 import com.whut.health_sys.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AppointmentServiceImpl implements AppointmentService
 {
     @Autowired

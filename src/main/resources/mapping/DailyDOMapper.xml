@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whut.health_sys.dao.DailyDOMapper">
+  <resultMap id="BaseResultMap" type="com.whut.health_sys.dataobject.DailyDO">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="recordtime" jdbcType="VARCHAR" property="recordtime" />
+    <result column="temperature" jdbcType="VARCHAR" property="temperature" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="infection" jdbcType="INTEGER" property="infection" />
+    <result column="familyinfection" jdbcType="INTEGER" property="familyinfection" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, uid, recordtime, temperature, location, infection, familyinfection
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from healthsys_daily
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
+  <select id="selectByUser" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from healthsys_daily
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
+<!--  hsy-->
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from healthsys_daily
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.whut.health_sys.dataobject.DailyDO" keyProperty="id" useGeneratedKeys="true">
+    insert into healthsys_daily (id, uid, recordtime, 
+      temperature, location, infection, 
+      familyinfection)
+    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{recordtime,jdbcType=VARCHAR}, 
+      #{temperature,jdbcType=VARCHAR}, #{location,jdbcType=VARCHAR}, #{infection,jdbcType=INTEGER}, 
+      #{familyinfection,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.whut.health_sys.dataobject.DailyDO" keyProperty="id" useGeneratedKeys="true">
+    insert into healthsys_daily
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="recordtime != null">
+        recordtime,
+      </if>
+      <if test="temperature != null">
+        temperature,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="infection != null">
+        infection,
+      </if>
+      <if test="familyinfection != null">
+        familyinfection,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null">
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="recordtime != null">
+        #{recordtime,jdbcType=VARCHAR},
+      </if>
+      <if test="temperature != null">
+        #{temperature,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="infection != null">
+        #{infection,jdbcType=INTEGER},
+      </if>
+      <if test="familyinfection != null">
+        #{familyinfection,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.whut.health_sys.dataobject.DailyDO">
+    update healthsys_daily
+    <set>
+      <if test="uid != null">
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="recordtime != null">
+        recordtime = #{recordtime,jdbcType=VARCHAR},
+      </if>
+      <if test="temperature != null">
+        temperature = #{temperature,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        location = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="infection != null">
+        infection = #{infection,jdbcType=INTEGER},
+      </if>
+      <if test="familyinfection != null">
+        familyinfection = #{familyinfection,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.whut.health_sys.dataobject.DailyDO">
+    update healthsys_daily
+    set uid = #{uid,jdbcType=INTEGER},
+      recordtime = #{recordtime,jdbcType=VARCHAR},
+      temperature = #{temperature,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      infection = #{infection,jdbcType=INTEGER},
+      familyinfection = #{familyinfection,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

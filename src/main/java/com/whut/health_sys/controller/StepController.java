@@ -36,9 +36,6 @@ public class StepController
                 return CommonReturnType.create(null,"user_havent_registered");
             }
 
-
-            stepService.selectByUid(userDO.getUid());
-
             if(stepService.check(userDO))
             {
                 return CommonReturnType.create(null,"already_upload_today");
