@@ -67,7 +67,7 @@ public class UserController
         mailAccount.setSslEnable(true);
         mailAccount.setFrom("860768214@qq.com");
         mailAccount.setUser("860768214@qq.com");
-        mailAccount.setPass("ynwsfemkrjozbdgc");
+        mailAccount.setPass("//");
 
 //        发送邮件
         MailUtil.send(mailAccount, schmail, "【健康理工】登陆/注册", "验证码为" + VCode + ", 30分钟内有效。", false);
